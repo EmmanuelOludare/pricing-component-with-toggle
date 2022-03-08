@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+*{
+	font-family: 'Montserrat', sans-serif;		
+}
+body{
+			background-color:hsl(240, 78%, 98%);	
+			color: hsl(232, 13%, 33%);
+		
+}
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+img[alt=backgroundtop]{
+				position: absolute;
+				right: 0px;
+				top:0px;
+				z-index: -2;
+}
+img[alt=backgroundbottom]{
+				display: none;
+				left: 0px;
+				bottom:0px;
+				z-index: -2;
+				position: absolute;
+}
+content{
+    		display: flex;
+    		flex-direction: column;		
+    		align-items: center;
+    		justify-content: center;
+    		text-align: center;
+}
+.plan-toggling{
+				display: flex;
+				flex-direction: row;
+				justify-content:space-around;
+		  	align-items:center;
+}
+.plan-toggling label{
+			border: none;	
+			height: 30px; 
+		 width: 50px;
+			border-radius: 20px;
+			background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+			margin-left: 15px;
+			margin-right: 15px;
+			position: relative;
+}
+.plan-toggling label:before{
+				position: absolute;
+			 content: "";
+				height:23px;
+				width:23px;
+				right: 4px;
+				top: 3px;
+	  		border:none;
+				border-radius: 50%;
+		  	cursor: pointer;
+				background: white;
+}
+.plan-toggling label.annually:before{
+				left: 4px;
+				transition: .4s;
+}
+#basic.me:before{
+				content: jdbsbsbhshd;
+}
+.plan-toggling{
+				color:hsl(234, 14%, 74%) ;
+				font-size: 14px;
+}
+.plan-types{
+				display: flex;
+				flex-direction: column;
+				gap:40px;
+				margin-top: 30px;
+}
+.plans{
+				background:white; 
+				height:405px;
+				width: 350px;
+				border-radius: 20px;
+				padding-top: 20px;
+}
+.plans hr{
+			width: 280px;
+			height: 0px;	
+			background: black;
+}
+.plans button{
+				text-transform: uppercase;
+				width: 280px;
+				background-image: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+				height: 40px;
+				border: none;
+				color: white;
+				border-radius:10px;
+				margin-top: 15px;
+}
+.plans h1{
+				font-size: 60px;
+				color: black;
+				margin-top: -10px;
+				margin-bottom: 20px;
+}
+.plan2{
+				background-image: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+				color: white;
+}
+.plan2 h1{
+				color: white;
+}
+.plan2 button{
+				background: white;
+				color:hsl(237, 63%, 64%);
+}
+.plan2 hr{
+				background: white;
+}
+@media(min-width:1000px){
+.plan-types{
+				flex-direction: row;
+				gap:20px;
+				align-items: center;
+}
+.plan2{
+				height: 425px;
+}
+img[alt=backgroundbottom]{
+				display: block;
+}
+}
+### Primary
+
+- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+
+### Neutral
+
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%)
